@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  multilayerarchitecture:
+    image: ${DOCKER_REGISTRY-demo}/multilayerarchitecture
+    build:
+      context: .
+      dockerfile: src/PresentationLayer/Dockerfile
